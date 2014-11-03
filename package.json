@@ -1,11 +1,11 @@
 {
   "name": "raspi-core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Base functionality for working with a Raspberry Pi from Node.js",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install": "sh install-wiringpi.sh"
+    "preinstall": "sh install-wiringpi.sh"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,6 @@
   "homepage": "https://github.com/bryan-m-hughes/raspi-core",
   "dependencies": {
     "nan": "^1.4.0"
-  }
+  },
+  "gypfile": true
 }
