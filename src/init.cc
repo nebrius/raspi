@@ -1,28 +1,7 @@
-Raspi Core
-==========
-
-Raspi Core provides base support for the Raspberry Pi. This module automatically downloads and installs [Wiring Pi](http://wiringpi.com/) to provide access to the hardware.
-
-This module exposes a single method, ```init```, that initializes Wiring PI. It takes a single callback as its arguments, to be called once initialization is complete, as shown below:
-
-```JavaScript
-var raspiCore = require('raspi-core');
-
-raspiCore.init(function() {
-  console.log('Raspberry Pi initialized');
-});
-```
-
-The intent of this module is to form the basis for a set of other modules that expose various peripheral APIs. Check out:
-
-* [Raspi GPIO](https://github.com/bryan-m-hughes/raspi-gpio): Basic GPIO access
-
-License
-=======
-
+/*
 The MIT License (MIT)
 
-Copyright (c) 2014 Bryan Hughes bryan@theoreticalideations.com (https://theoreticalideations.com)
+Copyright (c) 2013-2014 Bryan Hughes <bryan@theoreticalideations.com> (http://theoreticalideations.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -41,3 +20,41 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+*/
+
+#include <wiringPi.h>
+#include <node.h>
+#include <nan.h>
+#include "./init.h"
+
+using v8::Function;
+using v8::Local;
+using v8::Null;
+using v8::Number;
+using v8::Value;
+
+class InitWorker : public NanAsyncWorker {
+ public:
+
+  InitWorker(NanCallback *callback) : NanAsyncWorker(callback) {}
+
+  ~InitWorker() {}
+
+  void Execute () {
+    wiringPiSetupGpio();
+  }
+
+  void HandleOKCallback () {
+    NanScope();
+    Local<Value> argv[] = {};
+    callback->Call(0, argv);
+  };
+};
+
+// Asynchronous access to the `Estimate()` function
+NAN_METHOD(init) {
+  NanScope();
+  NanCallback *callback = new NanCallback(args[0].As<Function>());
+  NanAsyncQueueWorker(new InitWorker(callback));
+  NanReturnUndefined();
+}

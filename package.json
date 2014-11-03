@@ -1,0 +1,28 @@
+{
+  "name": "raspi-core",
+  "version": "1.0.0",
+  "description": "Base functionality for working with a Raspberry Pi from Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "sh install-wiringpi.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bryan-m-hughes/raspi-core.git"
+  },
+  "keywords": [
+    "raspberry pi",
+    "robotics",
+    "nodebots"
+  ],
+  "author": "Bryan Hughes <bryan@theoreticalideations.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bryan-m-hughes/raspi-core/issues"
+  },
+  "homepage": "https://github.com/bryan-m-hughes/raspi-core",
+  "dependencies": {
+    "nan": "^1.4.0"
+  }
+}
