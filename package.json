@@ -1,11 +1,11 @@
 {
   "name": "raspi-core",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Base functionality for working with a Raspberry Pi from Node.js",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "preinstall": "sh install-wiringpi.sh"
+    "preinstall": "sh install-wiringpi.sh && node-gyp rebuild"
   },
   "repository": {
     "type": "git",
@@ -25,5 +25,8 @@
   "dependencies": {
     "nan": "^1.4.0"
   },
-  "gypfile": true
+  "gypfile": true,
+  "engines": {
+    "node": ">=0.6.0"
+  }
 }
