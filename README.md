@@ -3,6 +3,8 @@ Raspi Core
 
 Raspi Core provides base support for the Raspberry Pi. This module automatically downloads and installs [Wiring Pi](http://wiringpi.com/) to provide access to the hardware.
 
+Install with ```npm install raspi-core```. Note: you may need to install [node-gyp](https://www.npmjs.org/package/node-gyp) manually: ```npm install -g node-gyp```.
+
 This module exposes a single method, ```init```, that initializes Wiring PI. It takes a single callback as its arguments, to be called once initialization is complete, as shown below:
 
 ```JavaScript

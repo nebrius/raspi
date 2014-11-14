@@ -4,8 +4,7 @@
   "description": "Base functionality for working with a Raspberry Pi from Node.js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "preinstall": "sh install-wiringpi.sh && node-gyp rebuild"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -23,7 +22,8 @@
   },
   "homepage": "https://github.com/bryan-m-hughes/raspi-core",
   "dependencies": {
-    "nan": "^1.4.0"
+    "nan": "^1.4.0",
+    "raspi-wiringpi": "^1.0.0"
   },
   "gypfile": true,
   "engines": {
