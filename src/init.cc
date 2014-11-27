@@ -41,17 +41,16 @@ class InitWorker : public NanAsyncWorker {
   ~InitWorker() {}
 
   void Execute () {
-    wiringPiSetupGpio();
+    wiringPiSetup();
   }
 
   void HandleOKCallback () {
     NanScope();
     Local<Value> argv[] = {};
     callback->Call(0, argv);
-  };
+  }
 };
 
-// Asynchronous access to the `Estimate()` function
 NAN_METHOD(init) {
   NanScope();
   NanCallback *callback = new NanCallback(args[0].As<Function>());

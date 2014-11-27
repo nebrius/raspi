@@ -1,6 +1,6 @@
 {
   "name": "raspi-core",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Base functionality for working with a Raspberry Pi from Node.js",
   "main": "index.js",
   "scripts": {
@@ -27,6 +27,6 @@
   },
   "gypfile": true,
   "engines": {
-    "node": ">=0.6.0"
+    "node": ">=0.8.0"
   }
 }
