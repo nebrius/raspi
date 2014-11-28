@@ -1,3 +1,7 @@
+## 1.0.5 (2014-11-27)
+
+- Fixed a bad NPM publish
+
 ## 1.0.4 (2014-11-25)
 
 - Switched to using wiringPiSetup instead of wiringPiSetupGpio
