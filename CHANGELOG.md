@@ -1,3 +1,7 @@
+## 1.1.1 (2014-12-2)
+
+- Bug fix in package.json
+
 ## 1.1.0 (2014-12-2)
 
 - Switched to ECMAScript 6
