@@ -1,7 +1,7 @@
 /*
 The MIT License (MIT)
 
-Copyright (c) 2013-2014 Bryan Hughes <bryan@theoreticalideations.com> (http://theoreticalideations.com)
+Copyright (c) 2014 Bryan Hughes <bryan@theoreticalideations.com> (http://theoreticalideations.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -22,13 +22,21 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-import addon from '../build/Release/addon';
+var gulp = require('gulp');
+var traceur = require('gulp-traceur');
+var sourcemaps = require('gulp-sourcemaps');
+var del = require('del');
 
-var isInitialized = false;
+gulp.task('default', function() {
+  return gulp.src('index.js')
+    .pipe(sourcemaps.init())
+      .pipe(traceur({
+        modules: 'commonjs'
+      }))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('lib'));
+});
 
-export function init(cb) {
-  if (!isInitialized) {
-    isInitialized = true;
-    addon.init(cb);
-  }
-}
+gulp.task('clean', function(cb) {
+  del(['lib/index.js'], cb);
+});

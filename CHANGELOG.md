@@ -1,3 +1,8 @@
+## 1.1.0 (2014-12-2)
+
+- Switched to ECMAScript 6
+- This is a breaking API change! The export structure is slightly different
+
 ## 1.0.5 (2014-11-27)
 
 - Fixed a bad NPM publish
