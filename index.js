@@ -30,5 +30,7 @@ export function init(cb) {
   if (!isInitialized) {
     isInitialized = true;
     addon.init(cb);
+  } else {
+    process.nextTick(cb);
   }
 }

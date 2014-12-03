@@ -1,3 +1,7 @@
+## 1.1.2 (2014-12-3)
+
+- Made ```init``` properly reentrant
+
 ## 1.1.1 (2014-12-2)
 
 - Bug fix in package.json
