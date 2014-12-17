@@ -1,11 +1,36 @@
 Raspi Core
 ==========
 
-Raspi Core provides base support for the Raspberry Pi. This module automatically downloads and installs [Wiring Pi](http://wiringpi.com/) to provide access to the hardware.
+Raspi Core provides base support for the Raspberry Pi for the raspi suite of libraries. These libraries form the basis for [Raspi IO](https://github.com/bryan-m-hughes/raspi-io), an IO plugin that adds support for the Raspberry Pi to [Johnny-Five](https://github.com/rwaldron/johnny-five).
 
-Install with ```npm install raspi-core```. Note: you may need to install [node-gyp](https://www.npmjs.org/package/node-gyp) manually: ```npm install -g node-gyp```.
+This module, along with [Raspi Board](https://github.com/bryan-m-hughes/raspi-board) and [Raspi Peripheral](https://github.com/bryan-m-hughes/raspi-peripheral) forms the basis for a suite of modules that provide support for various peripherals.
 
-This module exposes a single method, ```init```, that initializes Wiring PI. It takes a single callback as its arguments, to be called once initialization is complete, as shown below:
+Check out the following peripheral API modules:
+
+* [Raspi GPIO](https://github.com/bryan-m-hughes/raspi-gpio)
+* [Raspi PWM](https://github.com/bryan-m-hughes/raspi-pwm)
+* [Raspi I2C](https://github.com/bryan-m-hughes/raspi-i2c)
+
+## Installation
+
+Install with NPM:
+
+```Shell
+npm install raspi-core
+```
+
+In rare cases, you may need to install [node-gyp](https://www.npmjs.org/package/node-gyp) manually:
+
+```Shell
+npm install -g node-gyp
+```
+
+## API
+
+This module exposes a single method, ```init```, that initializes the library suite. It takes a single callback as its arguments, to be called once initialization is complete, as shown below:
+
+
+## Example Usage
 
 ```JavaScript
 var raspiCore = require('raspi-core');
@@ -14,10 +39,6 @@ raspiCore.init(function() {
   console.log('Raspberry Pi initialized');
 });
 ```
-
-The intent of this module is to form the basis for a set of other modules that expose various peripheral APIs. Check out:
-
-* [Raspi GPIO](https://github.com/bryan-m-hughes/raspi-gpio): Basic GPIO access
 
 License
 =======
