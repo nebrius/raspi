@@ -11,6 +11,8 @@ Check out the following peripheral API modules:
 * [Raspi PWM](https://github.com/bryan-m-hughes/raspi-pwm)
 * [Raspi I2C](https://github.com/bryan-m-hughes/raspi-i2c)
 
+Note: when using this module, the script MUST be called with root permissions.
+
 ## Installation
 
 Install with NPM:
@@ -27,8 +29,31 @@ npm install -g node-gyp
 
 ## API
 
-This module exposes a single method, ```init```, that initializes the library suite. It takes a single callback as its arguments, to be called once initialization is complete, as shown below:
+### init(cb)
 
+The ```init``` method initializes the library suite. This method MUST be called before using any peripherals.
+
+<table>
+  <thead>
+    <tr>
+      <th>Argument</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tr>
+    <td>cb</td>
+    <td>Function</td>
+    <td>Callback to be called once the board has been initialized. Takes no arguments</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td colspan="2">
+      <table>
+        <tr><td>Takes no arguments</td></tr>
+      </table>
+    </td>
+</table>
 
 ## Example Usage
 
