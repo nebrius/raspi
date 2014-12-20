@@ -1,3 +1,8 @@
+## 1.1.3 (2014-12-20)
+
+- Added a README
+- Fixed a script compile issue that prevented 1.1.2 from including the reentrant fix
+
 ## 1.1.2 (2014-12-3)
 
 - Made ```init``` properly reentrant
