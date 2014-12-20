@@ -33,6 +33,8 @@ npm install -g node-gyp
 
 The ```init``` method initializes the library suite. This method MUST be called before using any peripherals.
 
+Arguments:
+
 <table>
   <thead>
     <tr>
@@ -53,7 +55,10 @@ The ```init``` method initializes the library suite. This method MUST be called 
         <tr><td>Takes no arguments</td></tr>
       </table>
     </td>
+  </tr>
 </table>
+
+Return Type: None
 
 ## Example Usage
 
