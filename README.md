@@ -3,7 +3,7 @@ Raspi Core
 
 Raspi Core provides base support for the Raspberry Pi for the raspi suite of libraries. These libraries form the basis for [Raspi IO](https://github.com/bryan-m-hughes/raspi-io), an IO plugin that adds support for the Raspberry Pi to [Johnny-Five](https://github.com/rwaldron/johnny-five).
 
-This module, along with [Raspi Board](https://github.com/bryan-m-hughes/raspi-board) and [Raspi Peripheral](https://github.com/bryan-m-hughes/raspi-peripheral) forms the basis for a suite of modules that provide support for various peripherals.
+This module, along with [Raspi Board](https://github.com/bryan-m-hughes/raspi-board) and [Raspi Peripheral](https://github.com/bryan-m-hughes/raspi-peripheral) forms the basis for the Raspi.js suite of modules that provide support for various peripherals on the Raspberry Pi.
 
 Check out the following peripheral API modules:
 
@@ -25,6 +25,16 @@ In rare cases, you may need to install [node-gyp](https://www.npmjs.org/package/
 
 ```Shell
 npm install -g node-gyp
+```
+
+## Example Usage
+
+```JavaScript
+var core = require('raspi-core');
+
+core.init(function() {
+  console.log('Raspberry Pi initialized');
+});
 ```
 
 ## API
@@ -59,16 +69,6 @@ Arguments:
 </table>
 
 Return Type: None
-
-## Example Usage
-
-```JavaScript
-var raspiCore = require('raspi-core');
-
-raspiCore.init(function() {
-  console.log('Raspberry Pi initialized');
-});
-```
 
 License
 =======
