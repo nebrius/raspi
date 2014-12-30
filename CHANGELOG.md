@@ -1,3 +1,7 @@
+## 1.1.4 (2014-12-29)
+
+- Updated the README
+
 ## 1.1.3 (2014-12-20)
 
 - Added a README

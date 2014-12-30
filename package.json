@@ -1,7 +1,7 @@
 {
   "name": "raspi-core",
-  "version": "1.1.3",
-  "description": "Base functionality for working with a Raspberry Pi from Node.js",
+  "version": "1.1.4",
+  "description": "Base functionality for the Raspi.js suite, provides initialization routines for the Raspberry Pi",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,7 +23,7 @@
   "homepage": "https://github.com/bryan-m-hughes/raspi-core",
   "dependencies": {
     "nan": "^1.4.0",
-    "raspi-wiringpi": "^1.0.0"
+    "raspi-wiringpi": "^1.0.4"
   },
   "devDependencies": {
     "del": "^0.1.3",
