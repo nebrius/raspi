@@ -1,9 +1,7 @@
 Raspi Core
 ==========
 
-Raspi Core provides base support for the Raspberry Pi for the raspi suite of libraries. These libraries form the basis for [Raspi IO](https://github.com/bryan-m-hughes/raspi-io), an IO plugin that adds support for the Raspberry Pi to [Johnny-Five](https://github.com/rwaldron/johnny-five).
-
-This module, along with [Raspi Board](https://github.com/bryan-m-hughes/raspi-board) and [Raspi Peripheral](https://github.com/bryan-m-hughes/raspi-peripheral) forms the basis for the Raspi.js suite of modules that provide support for various peripherals on the Raspberry Pi.
+Raspi Core provides initialization and base support for the Raspberry Pi. This module, along with [Raspi Board](https://github.com/bryan-m-hughes/raspi-board) and [Raspi Peripheral](https://github.com/bryan-m-hughes/raspi-peripheral), form the basis for the Raspi.js suite of modules that provide support for various peripherals on the Raspberry Pi. These libraries form the basis for [Raspi IO](https://github.com/bryan-m-hughes/raspi-io), an IO plugin that adds support for the Raspberry Pi to [Johnny-Five](https://github.com/rwaldron/johnny-five).
 
 Check out the following peripheral API modules:
 
@@ -43,7 +41,7 @@ core.init(function() {
 
 The ```init``` method initializes the library suite. This method MUST be called before using any peripherals.
 
-Arguments:
+_Arguments_:
 
 <table>
   <thead>
@@ -68,7 +66,7 @@ Arguments:
   </tr>
 </table>
 
-Return Type: None
+_Returns_: None
 
 License
 =======

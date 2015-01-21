@@ -1,3 +1,7 @@
+## 1.1.5 (2015-01-29)
+
+- Locked down the NAN version for now since code breaks on 1.5
+
 ## 1.1.4 (2014-12-29)
 
 - Updated the README
