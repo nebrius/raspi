@@ -1,4 +1,8 @@
-## 1.1.5 (2015-01-29)
+## 1.1.6 (2015-2-11)
+
+- Renamed this package to raspi.js (raspi in NPM) to better reflect the purpose.
+
+## 1.1.5 (2015-1-21)
 
 - Locked down the NAN version for now since code breaks on 1.5
 

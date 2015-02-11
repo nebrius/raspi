@@ -1,14 +1,14 @@
 {
-  "name": "raspi-core",
-  "version": "1.1.5",
-  "description": "Base functionality for the Raspi.js suite, provides initialization routines for the Raspberry Pi",
+  "name": "raspi",
+  "version": "1.1.6",
+  "description": "Provides access to Raspberry Pi peripherals from Node.js",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bryan-m-hughes/raspi-core.git"
+    "url": "https://github.com/bryan-m-hughes/raspi.git"
   },
   "keywords": [
     "raspberry pi",
@@ -18,9 +18,9 @@
   "author": "Bryan Hughes <bryan@theoreticalideations.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bryan-m-hughes/raspi-core/issues"
+    "url": "https://github.com/bryan-m-hughes/raspi/issues"
   },
-  "homepage": "https://github.com/bryan-m-hughes/raspi-core",
+  "homepage": "https://github.com/bryan-m-hughes/raspi",
   "dependencies": {
     "nan": "1.4.x",
     "raspi-wiringpi": "^1.0.4"

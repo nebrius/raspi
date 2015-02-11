@@ -1,7 +1,9 @@
-Raspi Core
+Raspi.js
 ==========
 
-Raspi Core provides initialization and base support for the Raspberry Pi. This module, along with [Raspi Board](https://github.com/bryan-m-hughes/raspi-board) and [Raspi Peripheral](https://github.com/bryan-m-hughes/raspi-peripheral), form the basis for the Raspi.js suite of modules that provide support for various peripherals on the Raspberry Pi. These libraries form the basis for [Raspi IO](https://github.com/bryan-m-hughes/raspi-io), an IO plugin that adds support for the Raspberry Pi to [Johnny-Five](https://github.com/rwaldron/johnny-five).
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/bryan-m-hughes/raspi-io?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+Raspi.js provides initialization and base support for the Raspberry Pi. This module, along with [Raspi Board](https://github.com/bryan-m-hughes/raspi-board) and [Raspi Peripheral](https://github.com/bryan-m-hughes/raspi-peripheral), provide support for various peripherals on the Raspberry Pi. These libraries form the basis for [Raspi IO](https://github.com/bryan-m-hughes/raspi-io), an IO plugin that adds support for the Raspberry Pi to [Johnny-Five](https://github.com/rwaldron/johnny-five).
 
 Check out the following peripheral API modules:
 
@@ -16,7 +18,7 @@ Note: when using this module, the script MUST be called with root permissions.
 Install with NPM:
 
 ```Shell
-npm install raspi-core
+npm install raspi
 ```
 
 In rare cases, you may need to install [node-gyp](https://www.npmjs.org/package/node-gyp) manually:
@@ -28,9 +30,9 @@ npm install -g node-gyp
 ## Example Usage
 
 ```JavaScript
-var core = require('raspi-core');
+var raspi = require('raspi');
 
-core.init(function() {
+raspi.init(function() {
   console.log('Raspberry Pi initialized');
 });
 ```
