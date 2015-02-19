@@ -1,4 +1,4 @@
-## 1.2.0
+## 1.2.0 (2015-2-19)
 
 - Upgraded NAN to get support for Node.js 0.12
   - io.js support is theoretically there, but won't work until https://github.com/TooTallNate/node-gyp/pull/564 is landed

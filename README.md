@@ -20,7 +20,7 @@ Install with NPM:
 npm install raspi
 ```
 
-## Example
+## Example Usage
 
 ```JavaScript
 var raspi = require('raspi');
