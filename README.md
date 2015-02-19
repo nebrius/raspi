@@ -9,7 +9,6 @@ Check out the following peripheral API modules:
 
 * [Raspi GPIO](https://github.com/bryan-m-hughes/raspi-gpio)
 * [Raspi PWM](https://github.com/bryan-m-hughes/raspi-pwm)
-* [Raspi I2C](https://github.com/bryan-m-hughes/raspi-i2c)
 
 Note: when using this module, the script MUST be called with root permissions.
 
@@ -21,19 +20,16 @@ Install with NPM:
 npm install raspi
 ```
 
-In rare cases, you may need to install [node-gyp](https://www.npmjs.org/package/node-gyp) manually:
-
-```Shell
-npm install -g node-gyp
-```
-
-## Example Usage
+## Example
 
 ```JavaScript
 var raspi = require('raspi');
+var gpio = require('raspi-gpio');
 
 raspi.init(function() {
-  console.log('Raspberry Pi initialized');
+  var input = new gpio.DigitalInput('P1-3');
+  var output = new gpio.DigitalOutput('P1-5');
+  output.write(input.read());
 });
 ```
 
