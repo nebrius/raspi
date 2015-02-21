@@ -1,3 +1,7 @@
+## 1.3.0 (2015-2-21)
+
+- Switched from traceur to babel for ES6->ES5 compilation
+
 ## 1.2.0 (2015-2-19)
 
 - Upgraded NAN to get support for Node.js 0.12

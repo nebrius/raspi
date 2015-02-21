@@ -23,15 +23,15 @@ THE SOFTWARE.
 */
 
 var gulp = require('gulp');
-var traceur = require('gulp-traceur');
+var babel = require('gulp-babel');
 var sourcemaps = require('gulp-sourcemaps');
 var del = require('del');
 
-gulp.task('default', function() {
+gulp.task('default', ['clean'], function() {
   return gulp.src('index.js')
     .pipe(sourcemaps.init())
-      .pipe(traceur({
-        modules: 'commonjs'
+      .pipe(babel({
+        modules: 'common'
       }))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('lib'));
