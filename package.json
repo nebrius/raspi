@@ -1,6 +1,6 @@
 {
   "name": "raspi",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "description": "Provides access to Raspberry Pi peripherals from Node.js",
   "main": "lib/index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bryan-m-hughes/raspi.git"
+    "url": "https://github.com/nebrius/raspi.git"
   },
   "keywords": [
     "raspberry pi",
@@ -18,12 +18,12 @@
   "author": "Bryan Hughes <bryan@theoreticalideations.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bryan-m-hughes/raspi/issues"
+    "url": "https://github.com/nebrius/raspi/issues"
   },
-  "homepage": "https://github.com/bryan-m-hughes/raspi",
+  "homepage": "https://github.com/nebrius/raspi",
   "dependencies": {
     "nan": "1.6.x",
-    "raspi-wiringpi": "1.0.5"
+    "raspi-wiringpi": "1.0.6"
   },
   "devDependencies": {
     "del": "^1.1.1",

@@ -24,7 +24,7 @@ THE SOFTWARE.
 
 import addon from '../build/Release/addon';
 
-var isInitialized = false;
+let isInitialized = false;
 
 export function init(cb) {
   if (!isInitialized) {
