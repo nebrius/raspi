@@ -1,14 +1,16 @@
 Raspi.js
 ==========
 
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/bryan-m-hughes/raspi-io?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/nebrius/raspi-io?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Raspi.js provides initialization and base support for the Raspberry Pi. This module, along with [Raspi Board](https://github.com/bryan-m-hughes/raspi-board) and [Raspi Peripheral](https://github.com/bryan-m-hughes/raspi-peripheral), provide support for various peripherals on the Raspberry Pi. These libraries form the basis for [Raspi IO](https://github.com/bryan-m-hughes/raspi-io), an IO plugin that adds support for the Raspberry Pi to [Johnny-Five](https://github.com/rwaldron/johnny-five).
+Raspi.js provides initialization and base support for the Raspberry Pi. This module, along with [Raspi Board](https://github.com/nebrius/raspi-board) and [Raspi Peripheral](https://github.com/nebrius/raspi-peripheral), provide support for various peripherals on the Raspberry Pi. These libraries form the basis for [Raspi IO](https://github.com/nebrius/raspi-io), an IO plugin that adds support for the Raspberry Pi to [Johnny-Five](https://github.com/rwaldron/johnny-five).
 
 Check out the following peripheral API modules:
 
-* [Raspi GPIO](https://github.com/bryan-m-hughes/raspi-gpio)
-* [Raspi PWM](https://github.com/bryan-m-hughes/raspi-pwm)
+* [Raspi GPIO](https://github.com/nebrius/raspi-gpio)
+* [Raspi PWM](https://github.com/nebrius/raspi-pwm)
+* [Raspi I2C](https://github.com/nebrius/raspi-i2c)
+* [Raspi LED](https://github.com/nebrius/raspi-led)
 
 Note: when using this module, the script MUST be called with root permissions.
 
