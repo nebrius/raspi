@@ -1,3 +1,10 @@
+## 1.3.2 (2015-7-16)
+
+- Updated dependencies
+- Updated the repository links to point to their new location
+- Added code linter
+- Update code style to use newer best practices
+
 ## 1.3.1 (2015-4-27)
 
 - Updated dependencies
