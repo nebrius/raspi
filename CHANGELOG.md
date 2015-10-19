@@ -1,3 +1,10 @@
+## 2.0.0 (2015-10-19)
+
+- Upgraded to NAN 2
+  - POTENTIAL BREAKING CHANGE
+  - The API has not changed, but the build requirements have
+  - Make sure you are running Raspbian Jesse, as this does not build on Raspbian Wheezy
+
 ## 1.3.2 (2015-7-16)
 
 - Updated dependencies

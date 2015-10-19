@@ -32,8 +32,8 @@ using v8::Object;
 using v8::String;
 
 void InitAll(Handle<Object> exports) {
-  exports->Set(NanNew<String>("init"),
-    NanNew<FunctionTemplate>(init)->GetFunction());
+  exports->Set(Nan::New<String>("init").ToLocalChecked(),
+    Nan::New<FunctionTemplate>(init)->GetFunction());
 }
 
 NODE_MODULE(addon, InitAll)

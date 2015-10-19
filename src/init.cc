@@ -33,10 +33,10 @@ using v8::Null;
 using v8::Number;
 using v8::Value;
 
-class InitWorker : public NanAsyncWorker {
+class InitWorker : public Nan::AsyncWorker {
  public:
 
-  InitWorker(NanCallback *callback) : NanAsyncWorker(callback) {}
+  InitWorker(Nan::Callback *callback) : Nan::AsyncWorker(callback) {}
 
   ~InitWorker() {}
 
@@ -45,15 +45,13 @@ class InitWorker : public NanAsyncWorker {
   }
 
   void HandleOKCallback () {
-    NanScope();
     Local<Value> argv[] = {};
     callback->Call(0, argv);
   }
 };
 
 NAN_METHOD(init) {
-  NanScope();
-  NanCallback *callback = new NanCallback(args[0].As<Function>());
-  NanAsyncQueueWorker(new InitWorker(callback));
-  NanReturnUndefined();
+  Nan::Callback *callback = new Nan::Callback(info[0].As<Function>());
+  Nan::AsyncQueueWorker(new InitWorker(callback));
+  return;
 }
