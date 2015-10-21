@@ -22,6 +22,8 @@ Install with NPM:
 npm install raspi
 ```
 
+**Warning**: this module requires GCC 4.8 or newer. This means that you should be running Raspbian Jesse or newer, released in September of 2015.
+
 ## Example Usage
 
 ```JavaScript

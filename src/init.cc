@@ -53,5 +53,4 @@ class InitWorker : public Nan::AsyncWorker {
 NAN_METHOD(init) {
   Nan::Callback *callback = new Nan::Callback(info[0].As<Function>());
   Nan::AsyncQueueWorker(new InitWorker(callback));
-  return;
 }
