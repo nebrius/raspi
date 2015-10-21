@@ -1,9 +1,10 @@
-## 2.0.0 (2015-10-19)
+## 2.0.0 (2015-10-20)
 
 - Upgraded to NAN 2
   - POTENTIAL BREAKING CHANGE
   - The API has not changed, but the build requirements have
   - Make sure you are running Raspbian Jesse because this module no longer builds on stock Raspbian Wheezy
+  - See https://github.com/fivdi/onoff/wiki/Node.js-v4-and-native-addons for more information
 
 ## 1.3.2 (2015-7-16)
 
