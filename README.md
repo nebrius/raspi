@@ -11,6 +11,7 @@ Check out the following peripheral API modules:
 * [Raspi PWM](https://github.com/nebrius/raspi-pwm)
 * [Raspi I2C](https://github.com/nebrius/raspi-i2c)
 * [Raspi LED](https://github.com/nebrius/raspi-led)
+* [Raspi Serial](https://github.com/nebrius/raspi-serial)
 
 Note: when using this module, the script MUST be called with root permissions.
 
