@@ -11,6 +11,7 @@ Check out the following peripheral API modules:
 * [Raspi PWM](https://github.com/nebrius/raspi-pwm)
 * [Raspi I2C](https://github.com/nebrius/raspi-i2c)
 * [Raspi LED](https://github.com/nebrius/raspi-led)
+* [Raspi Serial](https://github.com/nebrius/raspi-serial)
 
 Note: when using this module, the script MUST be called with root permissions.
 
@@ -23,6 +24,8 @@ npm install raspi
 ```
 
 **Warning**: this module requires GCC 4.8 or newer. This means that you should be running Raspbian Jessie or newer, released in September of 2015.
+
+Detailed instructions for getting a Raspberry Pi ready for NodeBots, including how to install Node.js, can be found in the [Raspi IO wiki](https://github.com/nebrius/raspi-io/wiki/Getting-a-Raspberry-Pi-ready-for-NodeBots)
 
 ## Example Usage
 
