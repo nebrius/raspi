@@ -1,3 +1,8 @@
+## 2.1.0 (2016-6-5)
+
+- Removed gulp in favor of npm run scripts
+- Updated dependencies
+
 ## 2.0.0 (2015-10-20)
 
 - Upgraded to NAN 2
