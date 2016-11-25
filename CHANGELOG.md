@@ -1,3 +1,7 @@
+## 3.0.0 (2016-11-25)
+
+- Removed raspi-wiringpi dependency because Raspbian now ships with it by default.
+
 ## 2.1.0 (2016-6-5)
 
 - Removed gulp in favor of npm run scripts

@@ -1,6 +1,6 @@
 {
   "name": "raspi",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "Provides access to Raspberry Pi peripherals from Node.js",
   "main": "lib/index.js",
   "scripts": {
@@ -24,8 +24,7 @@
   },
   "homepage": "https://github.com/nebrius/raspi",
   "dependencies": {
-    "nan": "^2.3.5",
-    "raspi-wiringpi": "1.0.6"
+    "nan": "^2.3.5"
   },
   "devDependencies": {
     "babel-cli": "^6.9.0",
