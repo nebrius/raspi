@@ -9,6 +9,7 @@ Check out the following peripheral API modules:
 
 * [Raspi GPIO](https://github.com/nebrius/raspi-gpio)
 * [Raspi PWM](https://github.com/nebrius/raspi-pwm)
+* [Raspi Software PWM](https://github.com/tralves/raspi-soft-pwm)
 * [Raspi I2C](https://github.com/nebrius/raspi-i2c)
 * [Raspi LED](https://github.com/nebrius/raspi-led)
 * [Raspi Serial](https://github.com/nebrius/raspi-serial)
