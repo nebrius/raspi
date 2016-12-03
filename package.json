@@ -1,8 +1,9 @@
 {
   "name": "raspi",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Provides access to Raspberry Pi peripherals from Node.js",
   "main": "dist/index.js",
+  "types": "./declarations/index.d.ts",
   "scripts": {
     "prebuild": "tslint src/**/*.ts",
     "build": "tsc",
