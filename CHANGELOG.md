@@ -1,4 +1,8 @@
-## 3.0.3
+## 3.0.4 (2016-12-3)
+
+- Fixed broken publish
+
+## 3.0.3 (2016-12-3)
 
 - Added proper .npmignore
 

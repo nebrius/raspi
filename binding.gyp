@@ -2,8 +2,8 @@
   "targets": [{
     "target_name": "addon",
     "sources": [
-      "src/addon.cc",
-      "src/init.cc"
+      "src-native/addon.cc",
+      "src-native/init.cc"
     ],
     "include_dirs": [
       "<!(node -e \"require('nan')\")"
