@@ -38,3 +38,9 @@ node_modules
 
 # IDE
 .vscode
+
+# package specific
+src/
+test/
+tsconfig.json
+tslint.json

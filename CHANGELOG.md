@@ -1,3 +1,7 @@
+## 3.0.3
+
+- Added proper .npmignore
+
 ## 3.0.2 (2016-12-3)
 
 - Added types declaration to package.json
