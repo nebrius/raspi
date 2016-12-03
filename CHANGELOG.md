@@ -1,3 +1,8 @@
+## 3.0.1 (2016-12-3)
+
+- Converted the project to TypeScript and cleaned up a bunch of odds and ends
+  - Note: there is no functionality change or bug fixes with this release
+
 ## 3.0.0 (2016-11-25)
 
 - Removed raspi-wiringpi dependency because Raspbian now ships with it by default.

@@ -1,7 +1,7 @@
 /*
 The MIT License (MIT)
 
-Copyright (c) 2014 Bryan Hughes <bryan@theoreticalideations.com> (http://theoreticalideations.com)
+Copyright (c) 2014 Bryan Hughes <bryan@nebri.us>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -22,29 +22,27 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-var gulp = require('gulp');
-var babel = require('gulp-babel');
-var sourcemaps = require('gulp-sourcemaps');
-var del = require('del');
-var spawn = require('child_process').spawn;
+export interface IInitCallback {
+  (): void;
+}
 
-gulp.task('default', ['clean', 'lint'], function() {
-  return gulp.src('index.js')
-    .pipe(sourcemaps.init())
-      .pipe(babel({
-        modules: 'common'
-      }))
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest('lib'));
-});
+interface IAddon {
+  init(cb: IInitCallback): void;
+}
 
-gulp.task('clean', function(cb) {
-  del(['lib'], cb);
-});
+// Creating type definition files for native code is...not so simple, so instead
+// we just disable tslint and trust that it works. It's not any less safe than
+// creating an external .d.ts file, and this way we don't have to move it around
+// tslint:disable-next-line
+const addon: IAddon = require('../build/Release/addon');
 
-gulp.task('lint', function(cb) {
-  var lint = spawn('eslint', [ 'index.js' ], {
-    stdio: 'inherit'
-  });
-  lint.on('close', cb);
-});
+let isInitialized = false;
+
+export function init(cb: IInitCallback) {
+  if (!isInitialized) {
+    isInitialized = true;
+    addon.init(cb);
+  } else {
+    process.nextTick(cb);
+  }
+}

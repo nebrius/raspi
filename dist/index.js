@@ -1,7 +1,7 @@
 /*
 The MIT License (MIT)
 
-Copyright (c) 2014 Bryan Hughes <bryan@theoreticalideations.com> (http://theoreticalideations.com)
+Copyright (c) 2014 Bryan Hughes <bryan@nebri.us>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,16 +21,21 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
-
-import addon from '../build/Release/addon';
-
-let isInitialized = false;
-
-export function init(cb) {
-  if (!isInitialized) {
-    isInitialized = true;
-    addon.init(cb);
-  } else {
-    process.nextTick(cb);
-  }
+"use strict";
+// Creating type definition files for native code is...not so simple, so instead
+// we just disable tslint and trust that it works. It's not any less safe than
+// creating an external .d.ts file, and this way we don't have to move it around
+// tslint:disable-next-line
+var addon = require('../build/Release/addon');
+var isInitialized = false;
+function init(cb) {
+    if (!isInitialized) {
+        isInitialized = true;
+        addon.init(cb);
+    }
+    else {
+        process.nextTick(cb);
+    }
 }
+exports.init = init;
+//# sourceMappingURL=index.js.map
