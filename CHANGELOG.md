@@ -1,3 +1,7 @@
+## 3.0.5 (2017-22-1)
+
+- Publishing a new version to update the README on npmjs.com. No other changes.
+
 ## 3.0.4 (2016-12-3)
 
 - Fixed broken publish
