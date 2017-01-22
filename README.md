@@ -33,12 +33,12 @@ Detailed instructions for getting a Raspberry Pi ready for NodeBots, including h
 ## Example Usage
 
 ```JavaScript
-var raspi = require('raspi');
-var gpio = require('raspi-gpio');
+const raspi = require('raspi');
+const gpio = require('raspi-gpio');
 
-raspi.init(function() {
-  var input = new gpio.DigitalInput('P1-3');
-  var output = new gpio.DigitalOutput('P1-5');
+raspi.init(() => {
+  const input = new gpio.DigitalInput('P1-3');
+  const output = new gpio.DigitalOutput('P1-5');
   output.write(input.read());
 });
 ```
