@@ -24,7 +24,7 @@ Install with NPM:
 npm install raspi
 ```
 
-_Note:_ this module requires [Wiring Pi](http://wiringpi.com/) be installed before installation of this module. Wiring Pi is included by default in the full Raspbian OS, but not the lite version. If you want to check if it is installed or not, run `gpio` from the command line and make sure the command exists. If it is not installed, install it with `sudo apt-get install wiringpi`.
+**Note:** this module requires [Wiring Pi](http://wiringpi.com/) be installed before installation of this module. Wiring Pi is included by default in the full Raspbian OS, but not the lite version. If you want to check if it is installed or not, run `gpio` from the command line and make sure the command exists. If it is not installed, install it with `sudo apt-get install wiringpi`.
 
 **Warning**: this module requires GCC 4.8 or newer. This means that you should be running Raspbian Jessie or newer, released in September of 2015.
 
