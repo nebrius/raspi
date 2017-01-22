@@ -14,7 +14,9 @@ Check out the following peripheral API modules:
 * [Raspi LED](https://github.com/nebrius/raspi-led)
 * [Raspi Serial](https://github.com/nebrius/raspi-serial)
 
-Note: when using this module, the script MUST be called with root permissions.
+**Warning:** when using this module, the script MUST be called with root permissions.
+
+**Note:** this project is written in [TypeScript](http://www.typescriptlang.org/) and includes type definitions in the package.json file. This means that if you want to use it from TypeScript, you don't need to install a separate @types module.
 
 ## Installation
 
