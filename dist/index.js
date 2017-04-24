@@ -22,6 +22,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 // We used to do some stuff here back when we used Wiring Pi, but now that we
 // use pigpio, there's nothing for us to do. We're keeping this module in place
 // though because some other OSes may require this initialization, and we may

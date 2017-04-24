@@ -43,8 +43,6 @@
         "no-shadowed-variable": true,
         "no-string-literal": true,
         "no-unused-expression": true,
-        "no-unused-new": true,
-        "no-use-before-declare": true,
         "use-isnan": true,
         "eofline": true,
         "linebreak-style": [ true, "LF" ],

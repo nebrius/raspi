@@ -25,8 +25,8 @@
   },
   "homepage": "https://github.com/nebrius/raspi",
   "devDependencies": {
-    "@types/node": "0.0.2",
-    "tslint": "^4.0.2",
-    "typescript": "^2.0.10"
+    "@types/node": "^7.0.13",
+    "tslint": "^5.1.0",
+    "typescript": "^2.2.2"
   }
 }
