@@ -26,23 +26,10 @@ export interface IInitCallback {
   (): void;
 }
 
-interface IAddon {
-  init(cb: IInitCallback): void;
-}
-
-// Creating type definition files for native code is...not so simple, so instead
-// we just disable tslint and trust that it works. It's not any less safe than
-// creating an external .d.ts file, and this way we don't have to move it around
-// tslint:disable-next-line
-const addon: IAddon = require('../build/Release/addon');
-
-let isInitialized = false;
-
+// We used to do some stuff here back when we used Wiring Pi, but now that we
+// use pigpio, there's nothing for us to do. We're keeping this module in place
+// though because some other OSes may require this initialization, and we may
+// even require it again someday in Raspbian.
 export function init(cb: IInitCallback) {
-  if (!isInitialized) {
-    isInitialized = true;
-    addon.init(cb);
-  } else {
-    process.nextTick(cb);
-  }
+  process.nextTick(cb);
 }

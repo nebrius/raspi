@@ -26,13 +26,24 @@ Install with NPM:
 npm install raspi
 ```
 
-**Note:** this module requires [Wiring Pi](http://wiringpi.com/) be installed before installation of this module. Wiring Pi is included by default in the full Raspbian OS, but not the lite version. If you want to check if it is installed or not, run `gpio` from the command line and make sure the command exists. If it is not installed, install it with `sudo apt-get install wiringpi`.
-
-**Warning**: this module requires GCC 4.8 or newer. This means that you should be running Raspbian Jessie or newer, released in September of 2015.
-
 Detailed instructions for getting a Raspberry Pi ready for NodeBots, including how to install Node.js, can be found in the [Raspi IO wiki](https://github.com/nebrius/raspi-io/wiki/Getting-a-Raspberry-Pi-ready-for-NodeBots)
 
 ## Example Usage
+
+In TypeScript/ES6:
+
+```TypeScript
+import { init } from 'raspi';
+import { DigitalInput, DigitalOutput } from 'raspi-gpio';
+
+init(() => {
+  const input = new DigitalInput('P1-3');
+  const output = new DigitalOutput('P1-5');
+  output.write(input.read());
+});
+```
+
+in JavaScript:
 
 ```JavaScript
 const raspi = require('raspi');

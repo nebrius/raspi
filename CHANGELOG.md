@@ -1,3 +1,7 @@
+## 4.0.0 (2017-4-23)
+
+- Removed Wiring Pi. There _shouldn't_ be any breaking changes, but since this is a large architectural change, I'm doing a major version bump anyways
+
 ## 3.0.5 (2017-22-1)
 
 - Publishing a new version to update the README on npmjs.com. No other changes.
