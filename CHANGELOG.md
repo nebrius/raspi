@@ -1,4 +1,4 @@
-## 5.0.0 (2017-
+## 5.0.0 (2017-9-11)
 
 - BREAKING CHANGE: dropped support for Node.js < 4.0.0, and now enforce it via package.json "engines" field.
 - SORT OF BREAKING-ISH CHANGE: dropped support for attempting to install on non-arm platforms via package.json's "cpu" field.
