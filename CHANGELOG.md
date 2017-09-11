@@ -1,3 +1,7 @@
+## 5.0.1 (2017-9-11)
+
+- Non-code change: updated the README and republishing to make sure it's in npm
+
 ## 5.0.0 (2017-9-11)
 
 - BREAKING CHANGE: dropped support for Node.js < 4.0.0, and now enforce it via package.json "engines" field.

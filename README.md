@@ -24,19 +24,17 @@ Check out the following peripheral API modules:
 
 Detailed instructions for getting a Raspberry Pi ready for NodeBots, including how to install Node.js, can be found in the [wiki](https://github.com/nebrius/raspi-io/wiki/Getting-a-Raspberry-Pi-ready-for-NodeBots)
 
-**Warning:** when using this module, the script MUST be called with root permissions.
-
-**Note:** this project is written in [TypeScript](http://www.typescriptlang.org/) and includes type definitions in the package.json file. This means that if you want to use it from TypeScript, you don't need to install a separate @types module.
+**Warning:** when using this module, it MUST be installed with user-level permissions, but run with root permissions (e.g. `sudo node index.js`).
 
 ## Installation
 
-Install with NPM:
+Install with npm:
 
 ```Shell
 npm install raspi
 ```
 
-Detailed instructions for getting a Raspberry Pi ready for NodeBots, including how to install Node.js, can be found in the [Raspi IO wiki](https://github.com/nebrius/raspi-io/wiki/Getting-a-Raspberry-Pi-ready-for-NodeBots)
+**Note:** this project is written in [TypeScript](http://www.typescriptlang.org/) and includes type definitions in the package.json file. This means that if you want to use it from TypeScript, you don't need to install a separate @types module.
 
 ## Example Usage
 
