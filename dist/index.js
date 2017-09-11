@@ -1,7 +1,8 @@
+"use strict";
 /*
 The MIT License (MIT)
 
-Copyright (c) 2014 Bryan Hughes <bryan@nebri.us>
+Copyright (c) 2014-2017 Bryan Hughes <bryan@nebri.us>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,7 +22,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
-"use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 // We used to do some stuff here back when we used Wiring Pi, but now that we
 // use pigpio, there's nothing for us to do. We're keeping this module in place

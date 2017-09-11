@@ -14,6 +14,16 @@ Check out the following peripheral API modules:
 * [Raspi LED](https://github.com/nebrius/raspi-led)
 * [Raspi Serial](https://github.com/nebrius/raspi-serial)
 
+## System Requirements
+
+- Raspberry Pi Model B Rev 1 or newer (sorry Model A users)
+- Raspbian Jessie or newer
+  - [Node-RED](http://nodered.org/) works, but can be finicky and difficult to debug.
+  - See https://github.com/nebrius/raspi-io/issues/24 for more info about support for other OSes
+- Node 4.0.0 or newer
+
+Detailed instructions for getting a Raspberry Pi ready for NodeBots, including how to install Node.js, can be found in the [wiki](https://github.com/nebrius/raspi-io/wiki/Getting-a-Raspberry-Pi-ready-for-NodeBots)
+
 **Warning:** when using this module, the script MUST be called with root permissions.
 
 **Note:** this project is written in [TypeScript](http://www.typescriptlang.org/) and includes type definitions in the package.json file. This means that if you want to use it from TypeScript, you don't need to install a separate @types module.
@@ -94,7 +104,7 @@ License
 
 The MIT License (MIT)
 
-Copyright (c) 2014 Bryan Hughes <bryan@nebri.us>
+Copyright (c) 2014-2017 Bryan Hughes <bryan@nebri.us>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

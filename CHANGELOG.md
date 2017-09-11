@@ -1,3 +1,9 @@
+## 5.0.0 (2017-
+
+- BREAKING CHANGE: dropped support for Node.js < 4.0.0, and now enforce it via package.json "engines" field.
+- SORT OF BREAKING-ISH CHANGE: dropped support for attempting to install on non-arm platforms via package.json's "cpu" field.
+    - Attempting to install this on a non-Raspberry Pi platform before didn't do much, since most of the Raspi.js suite wouldn't install on non-Raspberry Pi platforms. This module would install, even though you couldn't do anything with it.
+
 ## 4.0.0 (2017-4-23)
 
 - Removed Wiring Pi. There _shouldn't_ be any breaking changes, but since this is a large architectural change, I'm doing a major version bump anyways

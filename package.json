@@ -1,6 +1,6 @@
 {
   "name": "raspi",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "description": "Provides access to Raspberry Pi peripherals from Node.js",
   "main": "dist/index.js",
   "types": "./declarations/index.d.ts",
@@ -25,8 +25,14 @@
   },
   "homepage": "https://github.com/nebrius/raspi",
   "devDependencies": {
-    "@types/node": "^7.0.13",
-    "tslint": "^5.1.0",
-    "typescript": "^2.2.2"
-  }
+    "@types/node": "^8.0.28",
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.2"
+  },
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "cpu": [
+    "arm"
+  ]
 }
