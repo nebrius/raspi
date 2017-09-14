@@ -14,6 +14,8 @@ Check out the following peripheral API modules:
 * [Raspi LED](https://github.com/nebrius/raspi-led)
 * [Raspi Serial](https://github.com/nebrius/raspi-serial)
 
+If you have a bug report, feature request, or wish to contribute code, please be sure to check out the [Raspi IO Contributing Guide](https://github.com/nebrius/raspi-io/blob/master/CONTRIBUTING.md).
+
 ## System Requirements
 
 - Raspberry Pi Model B Rev 1 or newer (sorry Model A users)
