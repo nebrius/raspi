@@ -1,3 +1,9 @@
+## 5.0.2 (2017-11-18)
+
+- Non-ish-code change: Reworked the TypeSCript type definition for the signature. It's the same signature, just specified in a way that is easier for DefinitelyTyped to consume.
+- Updated the tsconfig.json and tslint.json configuration files to use a newer style, build tools updated
+- Note: the compiled output _did not change_
+
 ## 5.0.1 (2017-9-11)
 
 - Non-code change: updated the README and republishing to make sure it's in npm
