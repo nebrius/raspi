@@ -12,7 +12,8 @@
     "trailing-comma": false,
     "ordered-imports": false,
     "object-literal-sort-keys": false,
-    "variable-name": [ true, "allow-leading-underscore", "allow-pascal-case" ]
+    "variable-name": [ true, "allow-leading-underscore", "allow-pascal-case" ],
+    "max-classes-per-file": false
   },
   "rulesDirectory": []
 }
