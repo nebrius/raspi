@@ -31,4 +31,7 @@ function init(cb) {
     process.nextTick(cb);
 }
 exports.init = init;
+exports.module = {
+    init
+};
 //# sourceMappingURL=index.js.map

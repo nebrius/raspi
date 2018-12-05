@@ -68,6 +68,37 @@ raspi.init(() => {
 
 ## API
 
+### Module Constants
+
+<table>
+  <thead>
+    <tr>
+      <th>Constant</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tr>
+    <td>module</td>
+    <td>An easily consumable object for indirectly passing this module around. Intended specifically for use by Core IO (details coming soon)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><table>
+      <thead>
+        <tr>
+          <th>Property</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tr>
+        <td>init</td>
+        <td>Alias of the <a href="#init">init</a> method</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+
 ### init(cb)
 
 The ```init``` method initializes the library suite. This method MUST be called before using any peripherals.

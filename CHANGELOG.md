@@ -1,6 +1,12 @@
+## 5.1.0 (2017-12-4)
+
+- Moved dependencies to devDependencies that weren't supposed to be dependencies
+- Updated TypeScript to v3 (no compiled output change)
+- Added `module` export to conform with Core IO types
+
 ## 5.0.2 (2017-11-18)
 
-- Non-ish-code change: Reworked the TypeSCript type definition for the signature. It's the same signature, just specified in a way that is easier for DefinitelyTyped to consume.
+- Non-ish-code change: Reworked the TypeScript type definition for the signature. It's the same signature, just specified in a way that is easier for DefinitelyTyped to consume.
 - Updated the tsconfig.json and tslint.json configuration files to use a newer style, build tools updated
 - Note: the compiled output _did not change_
 
