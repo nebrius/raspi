@@ -1,3 +1,8 @@
+## 5.2.1 (2019-1-08)
+
+- Fixed a bug where destroying peripherals with more than one pin would cause the `destroy` method to be called more than once.
+- Fixed a bug where destroyed peripherals weren't removed from the registry of active pins.
+
 ## 5.2.0 (2019-1-08)
 
 - Added `getActivePeripheral`, `setActivePeripheral`, and `getActivePeripherals` methods to the base module. This functionality existed in raspi-peripheral already and was moved here.

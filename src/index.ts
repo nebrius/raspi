@@ -47,7 +47,10 @@ export function getActivePeripheral(pin: number): IPeripheral | undefined {
 
 export function setActivePeripheral(pin: number, peripheral: IPeripheral): void {
   if (registeredPins[pin]) {
-    registeredPins[pin].destroy();
+    if (registeredPins[pin].alive) {
+      registeredPins[pin].destroy();
+    }
+    delete registeredPins[pin];
   }
   registeredPins[pin] = peripheral;
 }
