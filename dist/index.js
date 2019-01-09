@@ -23,6 +23,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 Object.defineProperty(exports, "__esModule", { value: true });
+if (!global.raspiPinUsage) {
+    global.raspiPinUsage = {};
+}
+const registeredPins = global.raspiPinUsage;
 // We used to do some stuff here back when we used Wiring Pi, but now that we
 // use pigpio, there's nothing for us to do. We're keeping this module in place
 // though because some other OSes may require this initialization, and we may
@@ -31,7 +35,25 @@ function init(cb) {
     process.nextTick(cb);
 }
 exports.init = init;
+function getActivePeripherals() {
+    return registeredPins;
+}
+exports.getActivePeripherals = getActivePeripherals;
+function getActivePeripheral(pin) {
+    return registeredPins[pin];
+}
+exports.getActivePeripheral = getActivePeripheral;
+function setActivePeripheral(pin, peripheral) {
+    if (registeredPins[pin]) {
+        registeredPins[pin].destroy();
+    }
+    registeredPins[pin] = peripheral;
+}
+exports.setActivePeripheral = setActivePeripheral;
 exports.module = {
-    init
+    init,
+    getActivePeripherals,
+    getActivePeripheral,
+    setActivePeripheral
 };
 //# sourceMappingURL=index.js.map

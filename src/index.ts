@@ -22,7 +22,12 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-import { IBaseModule } from 'core-io-types';
+import { IBaseModule, IPeripheral } from 'core-io-types';
+
+if (!(global as any).raspiPinUsage) {
+  (global as any).raspiPinUsage = {};
+}
+const registeredPins: { [ pinNumber: string ]: IPeripheral } = (global as any).raspiPinUsage;
 
 // We used to do some stuff here back when we used Wiring Pi, but now that we
 // use pigpio, there's nothing for us to do. We're keeping this module in place
@@ -32,6 +37,24 @@ export function init(cb: () => void): void {
   process.nextTick(cb);
 }
 
+export function getActivePeripherals(): { [ pin: number ]: IPeripheral } {
+  return registeredPins;
+}
+
+export function getActivePeripheral(pin: number): IPeripheral | undefined {
+  return registeredPins[pin];
+}
+
+export function setActivePeripheral(pin: number, peripheral: IPeripheral): void {
+  if (registeredPins[pin]) {
+    registeredPins[pin].destroy();
+  }
+  registeredPins[pin] = peripheral;
+}
+
 export const module: IBaseModule = {
-  init
+  init,
+  getActivePeripherals,
+  getActivePeripheral,
+  setActivePeripheral
 };

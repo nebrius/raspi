@@ -1,3 +1,7 @@
+## 5.2.0 (2019-1-08)
+
+- Added `getActivePeripheral`, `setActivePeripheral`, and `getActivePeripherals` methods to the base module. This functionality existed in raspi-peripheral already and was moved here.
+
 ## 5.1.0 (2017-12-4)
 
 - Moved dependencies to devDependencies that weren't supposed to be dependencies

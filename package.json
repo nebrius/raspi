@@ -1,6 +1,6 @@
 {
   "name": "raspi",
-  "version": "5.1.0",
+  "version": "5.2.0",
   "description": "Provides access to Raspberry Pi peripherals from Node.js",
   "main": "dist/index.js",
   "types": "./declarations/index.d.ts",
@@ -26,7 +26,7 @@
   "homepage": "https://github.com/nebrius/raspi",
   "devDependencies": {
     "@types/node": "^10.12.12",
-    "core-io-types": "^1.0.1",
+    "core-io-types": "^1.4.0",
     "tslint": "^5.11.0",
     "typescript": "^3.2.1"
   },
