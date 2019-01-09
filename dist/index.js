@@ -23,6 +23,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 Object.defineProperty(exports, "__esModule", { value: true });
+const raspi_board_1 = require("raspi-board");
 if (!global.raspiPinUsage) {
     global.raspiPinUsage = {};
 }
@@ -54,10 +55,15 @@ function setActivePeripheral(pin, peripheral) {
     registeredPins[pin] = peripheral;
 }
 exports.setActivePeripheral = setActivePeripheral;
+function getPinNumber(alias) {
+    return raspi_board_1.getPinNumber(alias);
+}
+exports.getPinNumber = getPinNumber;
 exports.module = {
     init,
     getActivePeripherals,
     getActivePeripheral,
-    setActivePeripheral
+    setActivePeripheral,
+    getPinNumber
 };
 //# sourceMappingURL=index.js.map

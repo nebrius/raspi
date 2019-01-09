@@ -1,13 +1,17 @@
-## 5.2.2 (2019-1-08)
+## 5.3.0 (2019-1-9)
+
+- Added `getPinNumber` method to the base module to conform to Core IO Types refactor
+
+## 5.2.2 (2019-1-8)
 
 - Ok, fixed those bugs mentioned in 5.2.1 _for realz_ this time.
 
-## 5.2.1 (2019-1-08)
+## 5.2.1 (2019-1-8)
 
 - Fixed a bug where destroying peripherals with more than one pin would cause the `destroy` method to be called more than once.
 - Fixed a bug where destroyed peripherals weren't removed from the registry of active pins.
 
-## 5.2.0 (2019-1-08)
+## 5.2.0 (2019-1-8)
 
 - Added `getActivePeripheral`, `setActivePeripheral`, and `getActivePeripherals` methods to the base module. This functionality existed in raspi-peripheral already and was moved here.
 

@@ -23,6 +23,7 @@ THE SOFTWARE.
 */
 
 import { IBaseModule, IPeripheral } from 'core-io-types';
+import { getPinNumber as getRaspiPinNumber } from 'raspi-board';
 
 if (!(global as any).raspiPinUsage) {
   (global as any).raspiPinUsage = {};
@@ -56,9 +57,14 @@ export function setActivePeripheral(pin: number, peripheral: IPeripheral): void 
   registeredPins[pin] = peripheral;
 }
 
+export function getPinNumber(alias: string | number): number | null {
+  return getRaspiPinNumber(alias);
+}
+
 export const module: IBaseModule = {
   init,
   getActivePeripherals,
   getActivePeripheral,
-  setActivePeripheral
+  setActivePeripheral,
+  getPinNumber
 };
