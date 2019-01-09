@@ -45,10 +45,11 @@ function getActivePeripheral(pin) {
 exports.getActivePeripheral = getActivePeripheral;
 function setActivePeripheral(pin, peripheral) {
     if (registeredPins[pin]) {
-        if (registeredPins[pin].alive) {
-            registeredPins[pin].destroy();
+        registeredPins[pin].destroy();
+        const peripheralPins = registeredPins[pin].pins;
+        for (const peripheralPin of peripheralPins) {
+            delete registeredPins[peripheralPin];
         }
-        delete registeredPins[pin];
     }
     registeredPins[pin] = peripheral;
 }

@@ -1,3 +1,7 @@
+## 5.2.2 (2019-1-08)
+
+- Ok, fixed those bugs mentioned in 5.2.1 _for realz_ this time.
+
 ## 5.2.1 (2019-1-08)
 
 - Fixed a bug where destroying peripherals with more than one pin would cause the `destroy` method to be called more than once.
