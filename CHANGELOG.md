@@ -1,3 +1,8 @@
+## 6.0.0 (2019-1-10)
+
+- BREAKING CHANGE: dropped support for Node.js < 6
+- Removed the ARM CPU requirement for unit test infrastructure reasons. Don't run this on a not-Raspberry Pi unless you know what you're doing. Doing so is _not_ supported.
+
 ## 5.3.0 (2019-1-9)
 
 - Added `getPinNumber` method to the base module to conform to Core IO Types refactor

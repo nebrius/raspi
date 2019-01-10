@@ -1,6 +1,6 @@
 {
   "name": "raspi",
-  "version": "5.3.0",
+  "version": "6.0.0",
   "description": "Provides access to Raspberry Pi peripherals from Node.js",
   "main": "dist/index.js",
   "types": "./declarations/index.d.ts",
@@ -34,9 +34,6 @@
     "typescript": "^3.2.1"
   },
   "engines": {
-    "node": ">= 4.0.0"
-  },
-  "cpu": [
-    "arm"
-  ]
+    "node": ">= 6.4.0"
+  }
 }
