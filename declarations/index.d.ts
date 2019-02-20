@@ -1,4 +1,4 @@
-import { IBaseModule, IPeripheral } from 'core-io-types';
+import { IBaseModule, IPeripheral } from 'j5-io-types';
 export declare function init(cb: () => void): void;
 export declare function getActivePeripherals(): {
     [pin: number]: IPeripheral;

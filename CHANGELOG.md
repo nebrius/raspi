@@ -1,3 +1,7 @@
+## 6.0.1 (2019-2-20)
+
+- Brought in renamed j5-io-types
+
 ## 6.0.0 (2019-1-10)
 
 - BREAKING CHANGE: dropped support for Node.js < 6

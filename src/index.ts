@@ -22,7 +22,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-import { IBaseModule, IPeripheral } from 'core-io-types';
+import { IBaseModule, IPeripheral } from 'j5-io-types';
 import { getPinNumber as getRaspiPinNumber } from 'raspi-board';
 
 if (!(global as any).raspiPinUsage) {
