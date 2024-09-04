@@ -1,7 +1,7 @@
 Raspi.js
 ==========
 
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/nebrius/raspi-io?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+**NOTE: This project is in maintenance mode and no longer actively maintained.**
 
 Raspi.js provides initialization and base support for the Raspberry Pi. This module, along with [Raspi Board](https://github.com/nebrius/raspi-board) and [Raspi Peripheral](https://github.com/nebrius/raspi-peripheral), provide support for various peripherals on the Raspberry Pi. These libraries form the basis for [Raspi IO](https://github.com/nebrius/raspi-io), an IO plugin that adds support for the Raspberry Pi to [Johnny-Five](https://github.com/rwaldron/johnny-five).
 
